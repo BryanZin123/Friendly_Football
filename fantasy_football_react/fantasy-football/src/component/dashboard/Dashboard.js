@@ -123,7 +123,7 @@ export const Dashboard=()=>{
       <th scope="col" className="col-md-1">Last</th>
       <th scope="col" className="col-md-1">Position</th>
       <th scope="col" className="col-md-1">Fantasy Points</th>
-      <th scope="col" className="col-md-2">Action</th>
+      <th scope="col" className="col-md-1">Action</th>
 
     </tr>
   </thead>
@@ -134,12 +134,12 @@ player.map((item, index)=>{
   <table className="table table-hover" key={index}>
   <tbody>
     <tr >
-      <td className="col-md-1">{item.playerFirstName}</td>
-      <td className="col-md-1">{item.playerLastName}</td>
-      <td className="col-md-1">{item.playerPos}</td>
-      <td className="col-md-1">{item.playerNumber}</td>
-      <td className="col-md-1"><button className="btn btn-outline-primary" id={item.playerId} onClick={()=>getPlayerById(item.playerId)}>VIEW</button></td>
-      <td className="col-md-1"><button className="btn btn-outline-danger" id={item.playerId} onClick={()=>deletePlayerById(item.playerId)}>DELETE</button></td>
+      <td className="col-md-1 col-sm-1">{item.playerFirstName}</td>
+      <td className="col-md-1 col-sm-1">{item.playerLastName}</td>
+      <td className="col-md-1 col-sm-1">{item.playerPos}</td>
+      <td className="col-md-1 col-sm-1">{item.playerNumber}</td>
+      {/* <td className="col-md-1"><button className="btn btn-outline-primary" id={item.playerId} onClick={()=>getPlayerById(item.playerId)}>VIEW</button></td> */}
+      <td className="col-md-1 col-sm-1"><button className="btn btn-outline-danger" id={item.playerId} onClick={()=>deletePlayerById(item.playerId)}>DELETE</button></td>
     </tr>
   </tbody>
 </table>)

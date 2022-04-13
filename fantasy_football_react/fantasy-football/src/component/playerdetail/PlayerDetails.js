@@ -38,16 +38,6 @@ const getTeamId=()=>{
 }
 
 const savePlayer=(stats)=>{
-  // const playerStats = {
-  //   playerId:props.viewPlayerId.PlayerID, 
-  //                     playerPos:props.viewPlayerId.Position, 
-  //                     playerFirstName:props.viewPlayerId.FirstName,
-  //                     playerLastName:props.viewPlayerId.LastName, 
-  //                     playerNumber: stats.FantasyPoints , 
-  //                       team:{id:teamId}
-  // }
-
-  //console.log(playerStats);
   axios.post("http://localhost:8080/savePlayer",{   
     playerId:props.viewPlayerId.PlayerID, 
   playerPos:props.viewPlayerId.Position, 

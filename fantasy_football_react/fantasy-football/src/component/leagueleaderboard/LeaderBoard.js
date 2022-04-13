@@ -24,9 +24,9 @@ export const LeaderBoard=(props)=>{
           <table className="table table-hover">
              <thead>
                 <tr>
-                  <th scope="col" className='col-md-2'>TEAM</th>
-                  <th scope="col" className='col-md-2'>FANTASY POINTS</th>
-                  <th scope="col" className='col-md-2'>USER</th>
+                  <th scope="col" className='col-md-2 col-xs-1'>TEAM</th>
+                  <th scope="col" className='col-md-2 col-xs-1'>FANTASY POINTS</th>
+                  <th scope="col" className='col-md-2 col-xs-1'>USER</th>
                 </tr>
               </thead>
               </table>
@@ -36,9 +36,9 @@ export const LeaderBoard=(props)=>{
               <table className="table table-hover" key={details.id}>
               <tbody>
                 <tr>
-                  <td className='col-md-2'>{details.name}</td>
-                  <td className='col-md-2'>{details.teamTotalScore}</td>
-                  <td className='col-md-2'>{details.user.userFirstName}</td>
+                  <td className='col-md-2 col-sm-1'>{details.name}</td>
+                  <td className='col-md-2 col-sm-1'>{details.teamTotalScore}</td>
+                  <td className='col-md-2 col-sm-1'>{details.user.userFirstName}</td>
                 </tr>
               </tbody>
             </table>
